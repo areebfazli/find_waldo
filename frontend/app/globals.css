@@ -1,0 +1,34 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --card-glass: 0.6;
+  --btn-glass: 0.4;
+}
+
+html, body {
+  height: 100%;
+  background: theme('colors.background');
+}
+
+.glass {
+  @apply bg-white/60 backdrop-blur-md shadow-soft border border-white/40;
+}
+
+.btn-glass {
+  @apply bg-white/70 backdrop-blur-md shadow-soft border border-white/50;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
